@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Solutions Platform Tracker</title>
+    <style>
+      html, body, #viewDiv {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+      }
+    </style>
+    <link rel="stylesheet" href="https://js.arcgis.com/4.13/esri/css/main.css">
+	
+	<script>
+      var dojoConfig = {
+        packages: [
+          {
+            name: "geolocate",
+            location: "//2gis.github.io/mock-geolocation/dist",
+            main: "geolocate"
+          }
+        ]
+      };
+    </script>
+	
+	<script src="https://js.arcgis.com/4.13/"></script>
+	
+    <script src="tracker_mobilejs.js"></script>
+	
+	<div id="ac-wrapper" style='display:none'>
+		<div id="popup">
+			<center>
+				 <h2>Popup Content Here</h2>    
+				<input id="submitbtn" type="submit" name="submit" value="Submit" onClick="PopUp('hide')" />
+			</center>
+		</div>
+	</div>
+	
+	
+  </head>
+  <body>
+    <div id="viewDiv"></div>
+  </body>
+</html>
