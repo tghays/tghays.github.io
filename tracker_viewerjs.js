@@ -49,7 +49,7 @@ require([
 		//featureLayer.refreshInterval = 0.05;
 		console.log("set refresh interval")
 		console.log(featureLayer)
-		map.add(featureLayer);
+		//map.add(featureLayer);
 		
 		view.zoom = 16;
 		
